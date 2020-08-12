@@ -13,6 +13,8 @@ const config = {
     measurementId: "G-YPPC5S39QW"
   };
 
+firebase.initializeApp(config);  
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
 
@@ -30,7 +32,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
                 email,
                 createdAt,
                 ...additionalData
-            })
+            });
         } catch(error){
             console.log('error creating user', error.message);
         }
@@ -47,11 +49,10 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
         batch.set(newDocRef, obj);
     });
 
-    return await batch.commit()
-
+    return await batch.commit();
 };
 
-export const convertCollectionsSnapshotToMap = (collections) => {
+export const convertCollectionsSnapshotToMap = collections => {
     const transformedCollection = collections.docs.map(doc => {
         const { title, items } = doc.data();
 
@@ -60,17 +61,23 @@ export const convertCollectionsSnapshotToMap = (collections) => {
             id: doc.id,
             title,
             items
-        }
+        };
     });
 
     return transformedCollection.reduce((accumulator, collection) => {
         accumulator[collection.title.toLowerCase()] = collection;
         return accumulator;
     }, {});
+};
 
-}
-
-firebase.initializeApp(config);
+export const getCurrentUser = () => {
+    return new Promise((resolve, reject) => {
+        const unsubscribe = auth.onAuthStateChanged(userAuth => {
+            unsubscribe();
+            resolve(userAuth);
+        }, reject);
+    });
+};
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
