@@ -19,7 +19,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
         <Route path={`${match.path}/:collectionId`} component={CollectionPageContainer}/>
     </div>    
     );
-}    
+};    
 
 const mapDispatchToProps = dispatch => ({
     fetchCollectionsStart: () => dispatch(fetchCollectionsStart())
