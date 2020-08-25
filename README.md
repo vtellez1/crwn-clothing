@@ -1,4 +1,4 @@
-# Crown Clothing
+# Crown Clothing :crown:
 
 A massive E-commerce app with Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase.
 
@@ -8,11 +8,20 @@ Sharpening JavaScript, React, and Redux skills. Focused on improving efficiency.
 
 ## Built with:
 
-React, Redux, React Hooks, React Suspense, React Router, GraphQL, Context API, Firebase, Redux-Saga, and Stripe. 
+- React
+- Redux
+- React Hooks 
+- React Suspense
+- React Router
+- GraphQL
+- Context API
+- Firebase
+- Redux-Saga
+- Stripe
 
 ## Credits:
 
-Andrei Neagoie and Yihua Zhang with Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)
+Andrei Neagoie and Yihua Zhang with [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 
 ## Deployed site:
 
@@ -20,9 +29,9 @@ https://vanessa-crwn-live.herokuapp.com/
 
 ## Installation
 
-In the project directory, you can run:
+Install yarn for all dependencies: `yarn install`
 
-### `yarn start`
+In the project directory, you can run: `yarn start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
