@@ -1,4 +1,4 @@
-### Crown Clothing
+# Crown Clothing
 
 A massive E-commerce app with Redux, Hooks, GraphQL, ContextAPI, Stripe, Firebase.
 
@@ -18,7 +18,7 @@ Andrei Neagoie and Yihua Zhang with Complete React Developer in 2020 (w/ Redux, 
 
 https://vanessa-crwn-live.herokuapp.com/
 
-## Available Scripts
+## Installation
 
 In the project directory, you can run:
 
