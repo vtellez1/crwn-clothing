@@ -27,7 +27,7 @@ Andrei Neagoie and Yihua Zhang with [Complete React Developer in 2020 (w/ Redux,
 
 https://vanessa-crwn-live.herokuapp.com/
 
-## Installation
+## Installation:
 
 Install yarn for all dependencies: `yarn install`
 
