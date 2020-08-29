@@ -11,7 +11,6 @@ Sharpening JavaScript, React, and Redux skills. Focused on improving efficiency.
 - React
 - Redux
 - React Hooks 
-- React Suspense
 - React Router
 - GraphQL
 - Context API
